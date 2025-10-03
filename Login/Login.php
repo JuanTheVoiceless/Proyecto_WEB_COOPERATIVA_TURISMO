@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="icon" href="../IMG/Icon.png">
     <title>Login</title>
 </head>
     <body>
+        
         <div class="container">
             <form action="verificacion.php" method="post">
                 <h1>Iniciar Sesion</h1>

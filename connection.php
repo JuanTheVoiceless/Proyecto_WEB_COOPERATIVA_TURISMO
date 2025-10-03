@@ -1,8 +1,8 @@
 <?php
 $serverName = "localhost";
-$userName = "Adsinto";
-$password = "4nT¡c0n$7it¿ciOnkL";
-$dataBaseName = "login";
+$userName = "root";
+$password = ""; // Contra: 4nT¡c0n$7it¿ciOnkL
+$dataBaseName = "users";
 
 $conn = new mysqli($serverName, $userName, $password, $dataBaseName);
 $conn->set_charset("utf8");

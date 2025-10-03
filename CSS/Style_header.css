@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cielo: #2cc9e5;
-    --verde: #2cd87c;
+    --verde: rgba(41, 65, 35, 0.39);
     --degradado: linear-gradient(90deg, var(--verde),var(--cielo));
 }
 
@@ -17,6 +16,10 @@
     text-transform: capitalize;
 }
 
+span img{
+    width: 1px;
+    height: auto;
+}
 *::selection{
     background: var(--cielo);
     color: hwb(208 94% 0%);
@@ -49,15 +52,6 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-
-header .logo{
-    font-size: 2rem;
-    color: var(--cielo);
-}
-
-header .logo span{
-    color: var(--verde);
 }
 
 header .navbar a{

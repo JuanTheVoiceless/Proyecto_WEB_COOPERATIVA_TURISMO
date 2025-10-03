@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: right;
+    align-items: right(70%);
+    min-height: 50vh;
+    /* background: url(https://p4.wallpaperbetter.com/wallpaper/736/1019/757/fantasy-bridge-art-rocks-birds-hd-wallpaper-preview.jpg) no-repeat; */
+    /* background: url(../IMG/Logo_Login.png); */
+    background: url(../IMG/Logo_Login2.png);
+    background-size: cover; 
+}
+
+.container{
+    width: 420px;
+    /* border: 2px solid rgba(255, 255, 255, 0.068); */
+    border: 2px solid rgba(41, 65, 35, 0.39);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.container h1{
+    font-size: 45px;
+    text-align: center;
+}
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(35, 53, 31);
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(35, 53, 31);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: rgb(10, 10, 10);
+}
+
+.container .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+
+.remember-forgot label input{
+    color: rgb(0, 0, 0);
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(29, 44, 26);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-decoration-break: 0px, 0px, 10px, rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500px;
+    color:#ffffff;
+}
+
+.container .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 10px 0px 10px;
+}
+
+.register-link p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+} 
+
+.mensaje{
+    text-align: center;
+    margin-top: 40%;
+    
+}
+.regresar{
+    background-color: rgb(29, 44, 26);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 100px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: sans-serif; 
+}

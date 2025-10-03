@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+ 
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:  url(../imagenes/wallpaperbetter.com_7680x4320\ \(1\).jpg);
+    background-size: cover;
+}
+.incorrect{
+    position: absolute;
+    font-size: 15.5px;
+    background: transparent;
+    text-align: center;
+    width: 80%;
+    height: 120px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid rgba(245, 44, 44, 0.1);
+    box-shadow: 0px 0px 10px rgba(209, 22, 22, 0.705);
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    color: rgb(184, 39, 39);
+}
+.text_back {
+    position: absolute;
+    text-align: center;
+    margin-top: 110px;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.text_back a {
+    text-decoration: none;
+    color: white;
+}
+  
+.text_back a:hover {
+    color: #FF0000;
+}
+
+.back{
+    text-decoration: none;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 90px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(209, 22, 22, 0.705);
+    backdrop-filter: blur(5px); 
+}

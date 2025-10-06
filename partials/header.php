@@ -6,6 +6,7 @@
   <link rel="icon" href="../IMG/Icon.png">
   <link rel="stylesheet" href="../CSS/Style_header.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <?php
@@ -13,15 +14,23 @@
 ?>
 <header>
         <a href="../Inicio/" class="logo">
-            <span><img class="IMG_Logo" src="../IMG/Logo_Login2.png" alt="Logo"></span></a>
+          <nav class="Logo">
+            <span><img class="Logo" src="../IMG/Image.png" alt="Logo"></span>
+          </nav>
+        </a>
 
-            <input type="checkbox" id="barra_menu">
-            <label for="barra_menu" class="fa fa-bars"></label>
 
+          <input type="checkbox" id="barra_menu">
+          <label for="barra_menu" class="fa fa-bars"></label>
+
+
+            <!-- redireccionar corretamente -->
         <nav class ="navbar">
             <a href="#inicio">Inicio</a>
-            <a href="#detalles">Detalles</a>
-            <a href="#acerca_de">Acerca de</a>
+            <a href="#detalles">Reservas</a>
+            <a href="#acerca_de">Rutas</a>
+            <a href="../Quienes_Somos/">Sobre Nosotros</a>
+            <a href="#acerca_de">Equipo</a>
             <!-- <a href="../publicaciones/"></a>
             <a href="#contactanos"></a> -->
 
@@ -32,8 +41,8 @@
             
                 <?php if($_SESSION['tipo']=='ADMINISTRADOR'):?>
                   <!-- perfil admin -->
-                  <!-- <a href="../publicaciones/">Gestión de publicaciones</a>
-                  <a href="../historial.php/">Historial de uso</a> -->
+                  <a href="../publicaciones/">Gestión de Reservas</a>
+                  <a href="../historial.php/">Gestion del Personal</a>
                 <?php endif ?>
 
                 <a href="../Login/logout.php" class="right">Cerrar sesión</a>

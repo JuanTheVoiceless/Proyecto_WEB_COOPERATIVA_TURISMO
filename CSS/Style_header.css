@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --verde: rgba(41, 65, 35, 0.39);
-    --degradado: linear-gradient(90deg, var(--verde),var(--cielo));
+:root {
+  --verde: rgba(41, 65, 35, 0.39);
+  --cielo: #ffffff; 
+  --degradado: linear-gradient(90deg, var(--verde), var(--cielo));
 }
+
 
 *{
     font-family: "Roboto Condensed", sans-serif;
@@ -16,13 +18,12 @@
     text-transform: capitalize;
 }
 
-span img{
-    width: 1px;
-    height: auto;
-}
+
+
+
 *::selection{
     background: var(--cielo);
-    color: hwb(208 94% 0%);
+    color: hwb(133 12% 55%);
 }
 
 html{
@@ -31,7 +32,7 @@ html{
 }
 
 body{
-    background: #f4f6ff;
+    background: #f4f6ff11;
 }
 
 section{
@@ -52,6 +53,8 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    height: 11rem;
+    position: fixed;
 }
 
 header .navbar a{
@@ -74,4 +77,59 @@ header label{
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+}
+
+.logo img {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 480px) {
+  .logo img { width: 120px; }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .logo img { width: 200px; }
+}
+
+/* --- Estilos para Móviles (Menos de 768px) --- */
+@media (max-width: 768px) {
+
+    /* 1. MOSTRAR el ícono de menú (la etiqueta <label>) */
+    header label{
+        visibility: visible;
+        opacity: 1;         
+    }
+
+    /* 2. OCULTAR el menú de navegación (el .navbar) */
+    header .navbar{
+        position: fixed; 
+        top: 12rem;       
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        padding: 1rem 2rem;
+        z-index: 999; 
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
+    }
+    /* 3. Estilizar los enlaces del menú en modo móvil (que se apilen verticalmente) */
+    header .navbar a{
+        display: block; 
+        margin: 1.5rem 0;
+        padding: 0;
+    }
+    /* 4. REGLA CLAVE: Cuando el checkbox esté marcado, MOSTRAR el menú */
+    header input:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+header .navbar{
+    transition: clip-path .3s ease-in-out; 
 }

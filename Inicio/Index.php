@@ -10,8 +10,13 @@
     <title>Inicio</title>
 </head>
 <body>
+    <h1>hola mundo</h1>
     <?php 
         include_once '../partials/header.php';
     ?>
+    
+
+
+
 </body>
 </html>

@@ -1,0 +1,143 @@
+css
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9fdf9;
+    line-height: 1.6;
+}
+
+/* Hero principal */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://www.shutterstock.com/image-photo/tropical-forest-morning-fog-deep-260nw-2552537495.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Contenedor común */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* Sección Quiénes Somos */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-content img {
+    flex: 1 1 45%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-content p {
+    flex: 1 1 45%;
+    font-size: 1.1em;
+}
+
+/* Misión y Visión */
+.mission, .vision {
+    background-color: #e8f5e9;
+    text-align: center;
+}
+
+.mission p, .vision p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1em;
+}
+
+/* Valores */
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.value-card {
+    background: white;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+.contact {
+    background-color: #f0fff0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.contact button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 0.95em;
+}
+
